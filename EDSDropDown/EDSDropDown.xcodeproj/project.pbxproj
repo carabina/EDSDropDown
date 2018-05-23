@@ -83,6 +83,7 @@
 			children = (
 				74C4D74920B5F92C00C82E09 /* Source */,
 				74C4D73220B5F91800C82E09 /* EDSDropDown.h */,
+				74C4D74F20B5F92C00C82E09 /* EDSDropDownCell.xib */,
 				74C4D73320B5F91800C82E09 /* Info.plist */,
 			);
 			path = EDSDropDown;
@@ -101,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				74C4D74A20B5F92C00C82E09 /* Classes */,
-				74C4D74F20B5F92C00C82E09 /* EDSDropDownCell.xib */,
 			);
 			path = Source;
 			sourceTree = "<group>";

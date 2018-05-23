@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LS9-G7-fss">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S7c-cb-XMf">
+            <objects>
+                <viewController id="LS9-G7-fss" customClass="ViewController" customModule="EasyDropDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sf7-gF-62V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNB-2N-fPK">
+                                <rect key="frame" x="10" y="40" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.68903821239999996" green="0.066861575559999997" blue="0.58563055279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4bX-lQ-8bi"/>
+                                </constraints>
+                                <state key="normal" title="No Selection"/>
+                                <connections>
+                                    <action selector="actionButtonSelection:" destination="LS9-G7-fss" eventType="touchUpInside" id="L7K-a5-SDL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOW-Un-faU">
+                                <rect key="frame" x="10" y="328" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.68903821239999996" green="0.066861575559999997" blue="0.58563055279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CgI-Lh-Dm1"/>
+                                </constraints>
+                                <state key="normal" title="Multiple Selection"/>
+                                <connections>
+                                    <action selector="actionButtonSelection:" destination="LS9-G7-fss" eventType="touchUpInside" id="fgd-Ke-5Mo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YN8-zR-iAm">
+                                <rect key="frame" x="10" y="184" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.68903821239999996" green="0.066861575559999997" blue="0.58563055279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="giF-SX-ivq"/>
+                                </constraints>
+                                <state key="normal" title="Single Selection"/>
+                                <connections>
+                                    <action selector="actionButtonSelection:" destination="LS9-G7-fss" eventType="touchUpInside" id="Mfi-LG-9hR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="326-2q-qn8" firstAttribute="trailing" secondItem="QNB-2N-fPK" secondAttribute="trailing" constant="10" id="ETz-XZ-tnE"/>
+                            <constraint firstItem="YN8-zR-iAm" firstAttribute="top" secondItem="QNB-2N-fPK" secondAttribute="bottom" constant="100" id="H3J-dY-fNz"/>
+                            <constraint firstItem="jOW-Un-faU" firstAttribute="leading" secondItem="326-2q-qn8" secondAttribute="leading" constant="10" id="aoc-yJ-mQF"/>
+                            <constraint firstItem="QNB-2N-fPK" firstAttribute="leading" secondItem="326-2q-qn8" secondAttribute="leading" constant="10" id="dzY-zj-LEe"/>
+                            <constraint firstItem="326-2q-qn8" firstAttribute="trailing" secondItem="YN8-zR-iAm" secondAttribute="trailing" constant="10" id="gJi-mP-pnU"/>
+                            <constraint firstItem="QNB-2N-fPK" firstAttribute="top" secondItem="326-2q-qn8" secondAttribute="top" constant="20" id="nEv-Hc-Wvv"/>
+                            <constraint firstItem="326-2q-qn8" firstAttribute="trailing" secondItem="jOW-Un-faU" secondAttribute="trailing" constant="10" id="pIb-EJ-I5j"/>
+                            <constraint firstItem="jOW-Un-faU" firstAttribute="top" secondItem="YN8-zR-iAm" secondAttribute="bottom" constant="100" id="pgC-q4-au2"/>
+                            <constraint firstItem="YN8-zR-iAm" firstAttribute="leading" secondItem="326-2q-qn8" secondAttribute="leading" constant="10" id="ub0-R3-vrK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="326-2q-qn8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EF0-HX-YwZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="197"/>
+        </scene>
+    </scenes>
+</document>

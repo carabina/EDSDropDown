@@ -1,0 +1,16 @@
+PODS:
+  - EDSDropDown (1.0.1)
+
+DEPENDENCIES:
+  - EDSDropDown (from `../EDSDropDown`)
+
+EXTERNAL SOURCES:
+  EDSDropDown:
+    :path: "../EDSDropDown"
+
+SPEC CHECKSUMS:
+  EDSDropDown: a156a3a183dbe137f0eae98e6e15074a1845a884
+
+PODFILE CHECKSUM: 3522749e85e8fcf7482f7d4f0a76425f4d791a01
+
+COCOAPODS: 1.5.2
